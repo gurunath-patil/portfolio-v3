@@ -49,13 +49,13 @@ const educationArr = [
     <div class="py-6 grid grid-cols-1 md:grid-cols-2">
         <div>
             <PageSubTitle logoURL="ri-graduation-cap-line" txt="Education" textColor="text-lime-300" icon-color="text-amber-300" />
-            <div class="py-3">
+            <div class="py-2">
                 <Stepper :steps="educationArr" />
             </div>
         </div>
         <div>
             <PageSubTitle logoURL="ri-briefcase-2-line" txt="Experience" textColor="text-lime-300" icon-color="text-amber-300" />
-            <div class="py-3">
+            <div class="py-2">
                 <Stepper :steps="experienceArr" />
             </div>
         </div>

@@ -48,7 +48,7 @@ const alertDetails = ref({
 
 <template>
 	<PageTitle titleTxt='Projects' />
-	<div class="grid grid-cols-1 gap-5 pt-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 relative">
+	<div class="grid grid-cols-1 gap-5 pt-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 relative">
 		<ProjectCard v-for="project in projectDetails" :key="project.projectName" :projectDetails="project" 
 		@openAlert="alertDetails.value.canOpen = true"/>
 		<AlertBox v-if="alertDetails.canOpen" class="absolute bottom-0 right-0" :title="alertDetails.title" :description="alertDetails.description"
