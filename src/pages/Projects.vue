@@ -21,7 +21,7 @@ const projectDetails = [
 		projectName: 'YCanary',
 		sourceURL: 'https://ycanary.com/',
 		status: true,
-		imgURL: 'https://ycanary.com/assets/dashboard-DJ73f9T0.jpg',
+		imgURL: 'https://ycanary.com/assets/customdashboard-Cl2Mgd-N.webp',
 	},
 	{
 		projectName: 'Bloging Website',
