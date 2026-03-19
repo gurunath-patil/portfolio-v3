@@ -17,7 +17,7 @@ function openLink(url) {
                 <img :src="projectDetails.imgURL" :alt="projectDetails.projectName" class="w-full h-full object-cover">
             </div>
             <div class="p-3">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">{{ projectDetails.projectName }}</h2>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 font-mono">{{ projectDetails.projectName }}</h2>
                 <button
                     class="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white px-6 py-1 rounded transition-colors cursor-pointer"
                     :disabled="!projectDetails.sourceURL" @click="openLink(projectDetails.sourceURL)">

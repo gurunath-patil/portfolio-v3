@@ -9,7 +9,7 @@ const projectDetails = [
 		projectName: 'YCanary',
 		sourceURL: 'https://ycanary.com/',
 		status: true,
-		imgURL: 'https://ycanary.com/assets/customdashboard-Cl2Mgd-N.webp',
+		imgURL: 'https://ycanary.com/assets/dashboard-2-CtoAWk3x.webp',
 	},
 	{
 		projectName: 'Weather Forcast',

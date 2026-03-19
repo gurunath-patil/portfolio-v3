@@ -19,7 +19,7 @@ let contactDetails = [
 	{
 		imgURL: 'ri-map-pin-line',
 		title: 'Location',
-		content: 'Kolhapur | Pune',
+		content: 'Pune, Maharashtra',
 	},
 ]
 

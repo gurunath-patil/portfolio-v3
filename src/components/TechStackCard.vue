@@ -13,12 +13,6 @@ const techStackDetails = ref([
         name: 'React JS',
         color: '#61dafb'
     },
-    {
-        icon: 'ri-angularjs-fill',
-        name: 'Angular',
-        color: '#dd0031'
-    },
-
     // 2. Core Logic Languages
     {
         icon: 'ri-javascript-fill',
