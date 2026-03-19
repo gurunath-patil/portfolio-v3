@@ -16,7 +16,7 @@ function openLink(url) {
             <div class="h-40 flex items-center justify-center">
                 <img :src="projectDetails.imgURL" :alt="projectDetails.projectName" class="w-full h-full object-cover">
             </div>
-            <div class="p-3">
+            <div class="p-3 bg-[#F4EEFF]">
                 <h2 class="text-2xl font-bold text-gray-800 mb-4 font-mono">{{ projectDetails.projectName }}</h2>
                 <button
                     class="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white px-6 py-1 rounded transition-colors cursor-pointer"
