@@ -18,7 +18,7 @@ const logoDetails = ref([
 	{
 		URL: 'https://static.cdnlogo.com/logos/t/96/twitter-icon.svg',
 		networkName: 'Twitter',
-		accountURL: 'https://x.com/Gurunath861',
+		accountURL: 'https://x.com/gurunath__patil',
 	},
 ])
 </script>
