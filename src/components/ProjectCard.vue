@@ -18,9 +18,9 @@ const openPopUp = () => visible.value = true
     <div class="sm:min-w-80 md:max-w-80 relative">
         <div class="bg-white rounded-lg overflow-hidden shadow-lg">
             <div class="h-40 flex items-center justify-center">
-                <img :src="projectDetails.imgURL" :alt="projectDetails.projectName" class="w-full h-full object-cover">
+                <img :src="projectDetails.imgURL" :alt="projectDetails.projectName" class="w-full h-full object-contain">
             </div>
-            <div class="p-3 bg-[#F4EEFF]">
+            <div class="p-3 bg-blue-100">
                 <div class="flex items-center gap-x-2 mb-4">
                     <h2 class="text-2xl font-bold text-gray-800 font-mono">{{ projectDetails.projectName }}</h2>
                     <button class="cursor-pointer" @click="visible = true">
@@ -32,9 +32,9 @@ const openPopUp = () => visible.value = true
                     </button>
                 </div>
                 <button
-                    class="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white px-6 py-1 rounded transition-colors cursor-pointer"
+                    class="bg-indigo-500 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white px-6 py-1 rounded-lg transition-colors cursor-pointer"
                     :disabled="!projectDetails.sourceURL" @click="openLink(projectDetails.sourceURL)">
-                    Check Out
+                    View Project
                 </button>
             </div>
         </div>

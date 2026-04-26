@@ -2,6 +2,11 @@
 import PageTitle from '@/components/PageTitle.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import AlertBox from '@/components/AlertBox.vue';
+import dashboard_with_people from '../../public/dashboard_with_people.svg'
+import weather from '../../public/weather.svg'
+import ERP from '../../public/ERP.svg'
+import ERP_2 from '../../public/ERP_2.svg'
+import article from '../../public/article.svg'
 import { ref } from 'vue';
 
 const projectDetails = [
@@ -9,7 +14,7 @@ const projectDetails = [
 		projectName: 'YCanary',
 		sourceURL: 'https://ycanary.com/',
 		status: true,
-		imgURL: 'https://ycanary.com/assets/dashboard-2-CtoAWk3x.webp',
+		imgURL: dashboard_with_people,
 		desc: "A real-time marketing analytics platform used to monitor campaign performance across multiple advertising channels. Built responsive dashboards. Integrated third-party APIs such as Meta, Google Ads, and LinkedIn to fetch campaign insights and automate reporting workflows.",
 		keyFeatures: [
 			"Real-time campaign analytics dashboard",
@@ -25,7 +30,7 @@ const projectDetails = [
 		projectName: 'Weather Forecast',
 		sourceURL: 'https://weather-forcast-nu.vercel.app/',
 		status: true,
-		imgURL: 'https://images.pexels.com/photos/29034990/pexels-photo-29034990/free-photo-of-serene-mountain-view-above-sunrise-clouds.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+		imgURL: weather,
 		desc: "Built a modern weather forecasting web application that provides real-time and upcoming weather conditions for locations worldwide. Integrated external weather APIs to display hourly and daily forecasts with a clean and responsive user interface.",
 		keyFeatures: [
 			"Search weather by city or location",
@@ -38,7 +43,7 @@ const projectDetails = [
 	},
 	{
 		projectName: 'Nandan Dairy ERP',
-		imgURL: 'https://www.baramatidoodhsangh.com/new/Home%20Page%20Display-1.webp',
+		imgURL: ERP,
 		status: false,
 		sourceURL: null,
 		desc: "Developed ERP modules for a dairy business to streamline operations such as inventory management, milk collection, billing, customer management, and reporting. Designed forms with validations and dynamic business logic to reduce manual work and improve data accuracy.",
@@ -55,7 +60,7 @@ const projectDetails = [
 	},
 	{
 		projectName: 'Bways ERP',
-		imgURL: 'https://compservtech.com/site/assets/files/1425/bways_erp_logo.png',
+		imgURL: ERP_2,
 		status: false,
 		sourceURL: null,
 		desc: "Built ERP functionalities for business process automation including employee management, sales tracking, finance operations, and centralized reporting. Developed scalable APIs and responsive frontend modules for internal operations.",
@@ -72,7 +77,7 @@ const projectDetails = [
 		projectName: 'Article Website',
 		sourceURL: 'https://github.com/gurunath-patil/blog-website',
 		status: true,
-		imgURL: 'https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+		imgURL: article,
 		desc: "Created a content publishing platform where users can browse, read, and manage articles through a clean and modern interface. Focused on user experience, dynamic rendering, and content management workflows.",
 		keyFeatures: [
 			"Create, edit, and delete articles",
@@ -103,6 +108,3 @@ const alertDetails = ref({
 			@closeAlert="alertDetails.canOpen = false" />
 	</div>
 </template>
-<!-- <template>
-	<ProjectDescPopUp/>
-</template> -->
