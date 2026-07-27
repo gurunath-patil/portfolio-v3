@@ -7,6 +7,8 @@ import weather from '../../public/weather.svg'
 import ERP from '../../public/ERP.svg'
 import ERP_2 from '../../public/ERP_2.svg'
 import article from '../../public/article.svg'
+import shareWork from '../../public/sharing-articles_agyr.svg'
+
 import { ref } from 'vue';
 
 const projectDetails = [
@@ -25,6 +27,19 @@ const projectDetails = [
 			"Filtering, drill-down, and performance reports"
 		],
 		techStack: ['Vue.js', 'Vuetify', 'Django Rest Framework', 'DuckDB', 'ApexCharts', 'PostgreSQL', 'Docker']
+	},
+	{
+		projectName: 'File Sharing',
+		sourceURL: 'http://airbeam-green.vercel.app/',
+		status: true,
+		imgURL: shareWork,
+		desc: "A high-performance, real-time peer-to-peer file-sharing web application that allows users to seamlessly transfer single or multiple files of any format.",
+		keyFeatures: [
+			"Real-time, peer-to-peer file-sharing",
+			"Real-time signaling architecture",
+			"responsive, modern UI"
+		],
+		techStack: ['React', 'Tailwind CSS', 'webRTC', 'Django Rest Framework', 'Channel', 'DataChannel', 'react-router-dom']
 	},
 	{
 		projectName: 'Weather Forecast',
@@ -56,7 +71,7 @@ const projectDetails = [
 			"Role-based module access",
 			"Validation-driven data entry forms"
 		],
-		techStack: ['React','Tailwind CSS', 'React Router', 'Nest.js', 'Sql Server 2019', 'Crystal Report']
+		techStack: ['React', 'Tailwind CSS', 'React Router', 'Nest.js', 'Sql Server 2019', 'Crystal Report']
 	},
 	{
 		projectName: 'Bways ERP',
@@ -71,7 +86,7 @@ const projectDetails = [
 			"REST API integration",
 			"Dashboard with business KPIs",
 		],
-		techStack: ['React','Tailwind CSS', 'React Router', 'Nest.js', 'Sql Server 2019', 'Crystal Report']
+		techStack: ['React', 'Tailwind CSS', 'React Router', 'Nest.js', 'Sql Server 2019', 'Crystal Report']
 	},
 	{
 		projectName: 'Article Website',
@@ -86,7 +101,7 @@ const projectDetails = [
 			"User authentication system"
 		],
 		techStack: ['React', 'Tailwind CSS', 'Express.js', 'MongoDB', 'Node.js']
-	},
+	}
 ]
 
 const alertDetails = ref({
