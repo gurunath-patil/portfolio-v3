@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
     <div
-        class="w-4/5 h-auto rounded-2xl shadow-[rgba(60,64,67,0.3)_0_1px_2px_0,rgba(60,64,67,0.15)_0_2px_6px_2px]">
+        class="w-6/6 sm:w-4/5 h-auto rounded-2xl shadow-[rgba(60,64,67,0.3)_0_1px_2px_0,rgba(60,64,67,0.15)_0_2px_6px_2px]">
         <div class="p-4 pl-8 [--tl-color:#daa520] [--tl-rounded:9999px] [--tl-bullet-size:25px] [--tl-line-width:3px] [--offset:calc(var(--tl-bullet-size)/2+var(--tl-line-width)/2)]"
             data-align="left" role="group">
             <div v-for="(stepItem, index) in steps" :key="index"
@@ -33,7 +33,7 @@ const props = defineProps({
 
                     <div class="mt-1" role="group">
                         <p class="flex flex-row flex-nowrap items-center gap-2 text-amber-400 dark:text-orange-200">
-                            <span class="text-sm font-normal font-mono line-clamp-1">
+                            <span class="text-sm font-normal font-mono">
                                 {{ stepItem.subTitle }}
                             </span>
                         </p>
