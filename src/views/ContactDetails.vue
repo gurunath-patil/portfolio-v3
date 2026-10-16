@@ -16,9 +16,9 @@ const logoDetails = ref([
 		accountURL: 'https://github.com/gurunath-patil',
 	},
 	{
-		URL: 'https://static.cdnlogo.com/logos/t/96/twitter-icon.svg',
-		networkName: 'Twitter',
-		accountURL: 'https://x.com/gurunath__patil',
+		URL: 'https://static.cdnlogo.com/logos/i/93/instagram.svg',
+		networkName: 'Instagram',
+		accountURL: 'https://www.instagram.com/gurunath_patil_/',
 	},
 ])
 </script>
