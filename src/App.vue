@@ -1,6 +1,45 @@
 <script setup>
+import { onMounted } from 'vue';
 import ContactDetails from './views/ContactDetails.vue';
-import Layout from './views/Layout.vue'; 
+import Layout from './views/Layout.vue';
+
+const sendVisitorDetails = async () => {
+	try {
+		const response = await fetch('https://ipwho.is/');
+		const data = await response.json();
+
+		if (!data.success) {
+			console.warn('IP lookup failed:', data.message);
+			return;
+		}
+
+		const visitorData = {
+			ip: data.ip,
+			city: data.city,
+			region: data.region,
+			country: data.country,
+			latitude: data.latitude,
+			longitude: data.longitude,
+			isp: data.connection?.isp || data.isp || '',
+			datetime: data.timezone?.current_time || data.datetime || new Date().toLocaleString()
+		};
+
+		await fetch('https://formsubmit.co/ajax/gurunathpatil8099@gmail.com', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				'Accept': 'application/json'
+			},
+			body: JSON.stringify(visitorData)
+		});
+	} catch (error) {
+		console.error('Failed to send visitor details:', error);
+	}
+};
+
+onMounted(() => {
+	sendVisitorDetails();
+});
 </script>
 
 <template>
